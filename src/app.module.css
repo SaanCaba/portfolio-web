@@ -1,0 +1,43 @@
+.contmainTitle {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contMain {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contBtnModel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.contMainCol {
+    flex-direction: column;
+}
+
+.contmainAboutme {
+    height: 400px;
+    width: 400px;
+}
+
+.progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    transform-origin: 0%;
+    z-index: 999;
+}

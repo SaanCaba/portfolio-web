@@ -1,0 +1,133 @@
+.contContact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contContact form {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    height: min-content;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    width: 350px;
+}
+
+.input {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(255, 250, 250);
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+
+.textarea {
+    border: none;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    padding-top: 10px;
+}
+.input:focus {
+    outline: none;
+}
+
+.contBtn {
+    width: 100%;
+}
+
+.btn {
+    border: none;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    transition: 1s linear;
+}
+
+.btn:hover {
+    background-color: rgb(191, 188, 188);
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.label {
+    font-weight: bold;
+    color: white;
+}
+
+.textAreaSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contAnimLottie {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.lottie {
+    width: 350px;
+    height: 350px;
+}
+
+.contSpinner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.loadSpinner {
+    border: 3px solid rgba(35, 35, 35, 0.866);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media only screen and (min-width: 992px) {
+    .contContact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-content: center;
+        margin-bottom: 30px;
+    }
+    .contContact form {
+        gap: 70px;
+        padding: 50px;
+        width: 500px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+    .lottie {
+        width: 500px;
+        height: 500px;
+    }
+}

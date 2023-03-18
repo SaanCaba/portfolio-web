@@ -1,0 +1,65 @@
+{
+    "titles": {
+        "projects": "Projects",
+        "technologies": "Technologies"
+    },
+    "aboutme": {
+        "about-me": "Hi i'm Santiago, Frontend Developer. I consider my self a calm, respectful and resilient person. My most solid knowledge, i have in React, but i feel great working in Next.js, TypeScript, Angular and other technologies as well."
+    },
+    "sidebar": {
+        "about-me": "About me",
+        "technologies": "Technologies",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "form": {
+        "name": "Name",
+        "message": "Message",
+        "send": "Send"
+    },
+    "error-messages": {
+        "empty-name": "Please put a name.",
+        "short-name": "Please put a longer name",
+        "long-name": "Please put a shorter name",
+        "empty-email": "Please put a e-mail",
+        "not@": "Plase put a '@'",
+        "short-email": "Please put a longer e-mail",
+        "invalid-email": "Please put a valid e-mail",
+        "empty-message": "Please put a message",
+        "short-message": "Please put a longer message",
+        "long-message": "Please put a shorter message"
+    },
+    "projects-names": {
+        "pokemon": {
+            "name": "Guess the Pokemon App",
+            "desc": "In this application we visualize a silhouette of the pokemon, we have to guess which pokemon it is"
+        },
+        "piFood": {
+            "name": "I.P Recipes App",
+            "desc": "Application developed on a recipes API. We have filters, pagination and a form to create our custom recipe."
+        },
+        "ecommerce": {
+            "desc": "Application on a store, in this we have different species of products, a shopping cart and a means of payment to make the purchase."
+        },
+        "flights": {
+            "name": "Flights App",
+            "desc": "Application developed on a flight api, in which all available trips to free dates are displayed. The application has payment methods to buy the ticket."
+        },
+        "foods-app": {
+            "name": "Food App",
+            "desc": "Food app, with filters, login, logout and a Google login made with Firebase and a form to create a new food."
+        },
+        "weather": {
+            "name": "Weather App",
+            "desc": "Weather app, you can put a name of your city, and i give you how is the weather in that city."
+        },
+        "goals": {
+            "name": "Goals 2023 App",
+            "desc": "In this application we can put all of our goals for this year and when we complete the objetive we can cross it off "
+        },
+        "game": {
+            "name": "Rock-Papper-Scissors App",
+            "desc": "It's a rock-paper-scissors game, where i developed a CPU to play with someone."
+        }
+    }
+}

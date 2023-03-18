@@ -1,0 +1,14 @@
+body {
+    background-color: #f0f8ff00;
+}
+
+.particlesCont {
+    background-color: #000000;
+    position: relative;
+}
+
+#tsparticles canvas {
+    background-color: aquamarine !important;
+    z-index: -1 !important;
+    color: red !important;
+}

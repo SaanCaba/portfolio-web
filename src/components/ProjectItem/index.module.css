@@ -1,0 +1,155 @@
+.contItemP {
+    position: relative;
+    transition: 1s linear;
+    width: 100%;
+    height: 100%;
+}
+
+.contHover {
+    overflow: hidden;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    display: flex !important;
+    opacity: 0.9;
+    flex-direction: column;
+    transition: 1.5s ease;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.headerHover span {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+.contTecnologia img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.411);
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+}
+
+/* .contHover span {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+} */
+
+.contItemP:hover .contHover {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0%;
+}
+
+.contImgDesc {
+    height: 100%;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.contDesc {
+    overflow: hidden;
+    height: 0%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.9;
+    transition: 1.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contDesc p {
+    margin-top: 10px;
+    width: 350px;
+    font-size: small;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.contLogos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contLogos img {
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.595);
+    padding: 12px;
+    object-fit: contain;
+    box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+}
+
+.contImgDesc:hover .contDesc {
+    height: 30%;
+}
+
+.contTecnologias img {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.595);
+    padding: 12px;
+    margin-right: 10px;
+    object-fit: contain;
+    box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+    .contDesc p {
+        width: 100%;
+        margin-top: 15px;
+        font-size: medium;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .headerHover span {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 1px;
+    }
+}

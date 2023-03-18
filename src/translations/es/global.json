@@ -1,0 +1,65 @@
+{
+    "titles": {
+        "projects": "Proyectos",
+        "technologies": "Tecnologías"
+    },
+    "aboutme": {
+        "about-me": "Hola soy Santiago, Frontend Developer. Me considero una persona tranquila, respetuosa y resiliente. Mis conocimientos más sólidos los tengo en React, pero también me siento cómodo trabajando en Angular, Next.js, TypeScript y otras tecnologías."
+    },
+    "sidebar": {
+        "about-me": "Sobre mí",
+        "technologies": "Tecnologías",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "form": {
+        "name": "Nombre",
+        "message": "Mensaje",
+        "send": "Enviar"
+    },
+    "error-messages": {
+        "empty-name": "Por favor coloque su nombre.",
+        "short-name": "Por favor coloque un nombre más largo.",
+        "long-name": "Por favor coloque un nombre más corto.",
+        "empty-email": "Por Favor coloque un correo.",
+        "not@": "Por favor coloque un'@'.",
+        "short-email": "Por favor coloque un email más largo.",
+        "invalid-email": "Por favor coloque un email válido.",
+        "empty-message": "Por favor coloque un mensaje.",
+        "short-message": "Por favor coloque un mensaje más largo.",
+        "long-message": "Por favor coloque un mensaje más corto."
+    },
+    "projects-names": {
+        "pokemon": {
+            "name": "Adivina el pokemon Pokemon App",
+            "desc": "Aplicación, en la cual se visualiza una silueta de un Pokemón, y hay que adivinar cual es."
+        },
+        "piFood": {
+            "name": "P.I Recetas App",
+            "desc": "Aplicación, desarrollada sobre una API de recetas. Se renderizan, hay filtros, paginación y un formulario para crear una receta nueva."
+        },
+        "ecommerce": {
+            "desc": "Aplicación, sobre una tienda, en la cual tenemos distintas especies de productos, un carrito de compras y un método de pago para realizar la compra!"
+        },
+        "flights": {
+            "name": "Vuelos App",
+            "desc": "Aplicación, desarrollada sobre una API de vuelos, en la cual se visualizan todos los viajes disponibles para las fechas disponibles. Cuenta con métodos de pago para poder pagar el pasaje."
+        },
+        "foods-app": {
+            "name": "Comidas App",
+            "desc": "Aplicación sobre comidas, con filtros, login, logueo con terceros realizados en Firebase y un formulario para crear una nueva comida."
+        },
+        "weather": {
+            "name": "Clima App",
+            "desc": "Aplicación de clima, que según el lugar seleccionado te sale como está el clima en ese sitio."
+        },
+        "goals": {
+            "name": "Objetivos 2023 App",
+            "desc": "Aplicación donde podemos colocar todos nuestros objetivos para este año, e ir tachandolos."
+        },
+        "game": {
+            "name": "Piedra-Papel-Tijera App",
+            "desc": "Juego de piedra, papel o tijeras, donde se desarrollo un usuario CPU con el quien jugar."
+        }
+    }
+}
