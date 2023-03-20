@@ -30,7 +30,7 @@
     right: 0;
     background: white;
     width: 0%;
-    transition: 0.5s linear;
+    transition: 0.3s linear;
 }
 
 .contMenuActive {
@@ -68,7 +68,6 @@
 
 .iconSpan {
     color: rgb(0, 0, 0);
-    animation: rendericonSpan 1s linear;
     font-family: "Poppins", sans-serif;
     font-size: 25px;
     cursor: pointer;
@@ -95,7 +94,7 @@
     transition: 0.3s linear;
     width: 150px;
     position: absolute;
-    top: 20px;
+    top: 17px;
     z-index: -1;
 }
 
@@ -104,8 +103,9 @@
 }
 
 .scrollLink {
-    overflow: hidden;
     height: 30px;
+    overflow: hidden;
+    animation: rendericonSpan 1s linear;
 }
 
 @keyframes renderIcon {
@@ -134,7 +134,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        width: 20%;
+        width: 15%;
         transition: 0.5s linear;
         background: white;
     }

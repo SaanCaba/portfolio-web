@@ -3,6 +3,7 @@ import styles from "./index.module.css";
 import { BiCodeAlt } from "react-icons/bi";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import resume from "../../assets/SantiagoCaballero-FRCV.pdf";
 function Title() {
     return (
         <>
@@ -14,11 +15,7 @@ function Title() {
                 </div>
             </div>
             <div className={styles.contIcons}>
-                <a
-                    target={"_blank"}
-                    href="Santiago Caballero - FR CV.pdf"
-                    download="Santiago Caballero - FR CV.pdf"
-                >
+                <a href={resume} download="Resume">
                     <HiOutlineDocumentDownload
                         className={styles.iconSocialMedia}
                     />

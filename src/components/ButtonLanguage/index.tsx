@@ -6,13 +6,16 @@ import { useEffect, useState } from "react";
 
 export const ButtonLanguage = () => {
     const [t, i18n] = useTranslation("global");
-    const [flagActive, setFlagActive] = useState<string | null>("");
+    const [flagActive, setFlagActive] = useState<string | null>("es");
     const handleLanguage = (language: string) => {
         i18n.changeLanguage(language);
         localStorage.setItem("language", language);
         setFlagActive(language);
     };
     useEffect(() => {
+        if (localStorage.getItem("language") === null) {
+            return setFlagActive("es");
+        }
         setFlagActive(localStorage.getItem("language"));
     }, []);
     return (
