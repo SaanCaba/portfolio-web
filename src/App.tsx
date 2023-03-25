@@ -8,12 +8,18 @@ import Contact from "./components/Contacto";
 
 import styles from "./app.module.css";
 import { ButtonLanguage } from "./components/ButtonLanguage";
+import { useState } from "react";
 
 function App() {
+    const [flagActive, setFlagActive] = useState<string>("es");
+
     const { scrollYProgress } = useScroll();
     return (
         <main style={{ position: "relative" }}>
-            <ButtonLanguage />
+            <ButtonLanguage
+                flagActive={flagActive}
+                setFlagActive={setFlagActive}
+            />
             <SideBar />
             <motion.div
                 className={styles.progressBar}
@@ -22,7 +28,7 @@ function App() {
 
             <div className={styles.contmainTitle}>
                 <div className={styles.contMainCol}>
-                    <Title />
+                    <Title flagActive={flagActive} />
                 </div>
             </div>
             <Aboutme />

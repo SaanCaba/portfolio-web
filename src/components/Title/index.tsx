@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
 import { BiCodeAlt } from "react-icons/bi";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import resume from "../../assets/SantiagoCaballero-FRCV.pdf";
-function Title() {
+
+interface Props {
+    flagActive: string;
+}
+
+function Title({ flagActive }: Props) {
+    const [lang, setLang] = useState<string>(
+        "https://drive.google.com/file/d/1LGB4ZcAlYw0QrcLWu1XVMJ5ZmolAPpeb/view"
+    );
+    useEffect(() => {
+        if (localStorage.getItem("language") !== null) {
+            if (localStorage.getItem("language") === "es") {
+                return setLang(
+                    "https://drive.google.com/file/d/1LGB4ZcAlYw0QrcLWu1XVMJ5ZmolAPpeb/view"
+                );
+            } else {
+                console.log("hola");
+                return setLang(
+                    "https://drive.google.com/file/d/1kMUccoHoB9EnEE-fAxveqn8xXC5jLzOE/view?usp=sharing"
+                );
+            }
+        }
+    }, [flagActive]);
+    console.log(lang);
     return (
         <>
             <div className={styles.contTitle}>
@@ -15,7 +37,7 @@ function Title() {
                 </div>
             </div>
             <div className={styles.contIcons}>
-                <a href={resume} download="Resume">
+                <a href={lang} target="_blank">
                     <HiOutlineDocumentDownload
                         className={styles.iconSocialMedia}
                     />

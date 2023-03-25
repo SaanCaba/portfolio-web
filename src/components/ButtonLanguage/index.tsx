@@ -4,9 +4,14 @@ import britanicFlag from "../../assets/flags/Flag_of_the_United_Kingdom.avif";
 import styles from "./btnLang.module.css";
 import { useEffect, useState } from "react";
 
-export const ButtonLanguage = () => {
+interface Props {
+    flagActive: string;
+    setFlagActive: (flag: string) => void;
+}
+
+export const ButtonLanguage = ({ flagActive, setFlagActive }: Props) => {
     const [t, i18n] = useTranslation("global");
-    const [flagActive, setFlagActive] = useState<string | null>("es");
+    // const [flagActive, setFlagActive] = useState<string | null>("es");
     const handleLanguage = (language: string) => {
         i18n.changeLanguage(language);
         localStorage.setItem("language", language);
@@ -16,7 +21,7 @@ export const ButtonLanguage = () => {
         if (localStorage.getItem("language") === null) {
             return setFlagActive("es");
         }
-        setFlagActive(localStorage.getItem("language"));
+        setFlagActive(localStorage.getItem("language") as string);
     }, []);
     return (
         <div className={styles.contBtnsLang}>
