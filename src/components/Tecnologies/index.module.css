@@ -29,11 +29,12 @@
 
 @media only screen and (min-width: 992px) {
     .sectionTecnologies {
-        height: min-content;
+        height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin-bottom: 50px;
     }
 
