@@ -1,141 +1,150 @@
 .contSideBar {
-    position: fixed;
-    z-index: 10;
+  position: fixed;
+  z-index: 10;
 }
 
 .contSideBarActive {
-    position: fixed;
-    z-index: 10;
-    height: 100%;
-    width: 100%;
-    backdrop-filter: brightness(20%);
-    transition: 1s linear;
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: brightness(20%);
+  transition: 1s linear;
 }
 
 .contBtnMenu {
-    cursor: pointer;
-    position: relative;
-    z-index: 999;
-    width: min-content;
-    margin-top: 20px;
-    margin-left: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+  width: min-content;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .contMenuInactive {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: white;
-    width: 0%;
-    transition: 0.3s linear;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  width: 0%;
+  transition: 0.3s linear;
 }
 
 .contMenuActive {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  transition: 0.5s linear;
+  background: white;
+}
+
+.contMenuActive menu {
+  height: 100%;
+  position: relative;
+}
+
+.contIconsMenu {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 140px;
+  height: 100%;
+}
+
+.licont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 250px;
+}
+
+.iconSpan {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+.sidebarIcon {
+  color: var(--primary);
+  transition: all 0.4s ease-in;
+}
+
+.sidebarIcon:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  animation: renderIcon 1s linear;
+  color: var(--primary);
+}
+
+.contSpanHr {
+  position: relative;
+  width: 150px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hrSpan {
+  border: 1px solid var(--primary);
+  transform: translateX(100%);
+  transition: 0.3s linear;
+  width: 150px;
+  position: absolute;
+  top: 17px;
+  z-index: -1;
+}
+
+.iconSpan:hover .hrSpan {
+  transform: translateX(0%);
+}
+
+.scrollLink {
+  height: 30px;
+  overflow: hidden;
+  animation: rendericonSpan 1s linear;
+}
+
+@keyframes renderIcon {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rendericonSpan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .contMenuActive {
     z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    width: 70%;
+    width: 15%;
     transition: 0.5s linear;
     background: white;
-}
-
-.contMenuActive menu {
-    height: 100%;
-    position: relative;
-}
-
-.contIconsMenu {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 140px;
-    height: 100%;
-}
-
-.licont {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 250px;
-}
-
-.iconSpan {
-    color: rgb(0, 0, 0);
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    cursor: pointer;
-    text-align: center;
-    position: relative;
-}
-
-.icon {
-    animation: renderIcon 1s linear;
-}
-
-.contSpanHr {
-    position: relative;
-    width: 150px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.hrSpan {
-    border: 1px solid black;
-    transform: translateX(100%);
-    transition: 0.3s linear;
-    width: 150px;
-    position: absolute;
-    top: 17px;
-    z-index: -1;
-}
-
-.iconSpan:hover .hrSpan {
-    transform: translateX(0%);
-}
-
-.scrollLink {
-    height: 30px;
-    overflow: hidden;
-    animation: rendericonSpan 1s linear;
-}
-
-@keyframes renderIcon {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@keyframes rendericonSpan {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .contMenuActive {
-        z-index: 1;
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 15%;
-        transition: 0.5s linear;
-        background: white;
-    }
+  }
 }

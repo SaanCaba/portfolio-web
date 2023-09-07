@@ -1,0 +1,72 @@
+.contContact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.contContact form {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  height: min-content;
+  padding: 0px;
+  width: 350px;
+}
+
+.contAnimLottie {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.lottie {
+  width: 350px;
+  height: 350px;
+}
+
+.contactMeInfo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.mail {
+  font-weight: bold;
+}
+
+.mailCont {
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+  display: flex;
+  color: var(--primary);
+  align-items: center;
+  gap: 10px;
+}
+
+.mailCont:hover {
+  transform: translateY(2px);
+}
+
+@media only screen and (min-width: 992px) {
+  .contContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 30px;
+  }
+  .contactMeInfo {
+    font-size: 30px;
+  }
+
+  .lottie {
+    width: 500px;
+    height: 500px;
+  }
+}

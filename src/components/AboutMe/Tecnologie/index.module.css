@@ -1,0 +1,21 @@
+.img {
+  max-width: 55px;
+  max-height: 55px;
+  min-height: 55px;
+  min-width: 55px;
+  object-fit: contain;
+  padding: 5px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.img:hover {
+  transform: translateY(-2px);
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  color: var(--primary);
+  font-weight: bold;
+}

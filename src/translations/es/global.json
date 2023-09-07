@@ -4,7 +4,8 @@
         "technologies": "Tecnologías"
     },
     "aboutme": {
-        "about-me": "Hola soy Santiago, Frontend Developer. Me considero una persona tranquila, respetuosa y resiliente. Mis conocimientos más sólidos los tengo en React, pero también me siento cómodo trabajando en Angular, Next.js, TypeScript y otras tecnologías."
+        "about-me": "Frontend Developer con ganas de seguir creciendo profesionalmente, estudiante de Desarrollo Web en UnLaM.",
+        "about-me-techs": "Conocimiento en las siguientes tecnologías:"
     },
     "sidebar": {
         "about-me": "Sobre mí",
@@ -12,10 +13,9 @@
         "projects": "Proyectos",
         "contact": "Contacto"
     },
-    "form": {
-        "name": "Nombre",
-        "message": "Mensaje",
-        "send": "Enviar"
+    "contact": {
+        "message-1": "Si te parece atractivo mi perfil, o si queres",
+        "message-2": "conocerme mejor, te invito a conversar:"
     },
     "error-messages": {
         "empty-name": "Por favor coloque su nombre.",

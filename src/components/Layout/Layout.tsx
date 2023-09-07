@@ -1,18 +1,7 @@
-import React from "react";
-import Particle from "../Particle";
-import styles from "./layout.module.css";
-
-interface Props {
-    children: React.ReactNode;
+import React from 'react'
+import styles from './layout.module.css'
+function Layout({ children }: { children: React.ReactNode }) {
+  return <div className={styles.layout}>{children}</div>
 }
 
-function Layout({ children }: Props) {
-    return (
-        <main className={styles.layout}>
-            <Particle />
-            {children}
-        </main>
-    );
-}
-
-export default Layout;
+export default Layout

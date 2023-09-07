@@ -9,53 +9,50 @@ import nodeLogo from '../assets/tecnologias/nodejs.jpg'
 import sassLogo from '../assets/tecnologias/sasslogo.png'
 import tailwindLogo from '../assets/tecnologias/tailwindLogo.png'
 
-
-
-interface DataTec{
-    name:string,
-    image:string
+interface DataTec {
+  name: string
+  image: string
 }
 
 export const dataTec: Array<DataTec> = [
-    {
-        name:'JavaScript',
-        image:jsLogo
-    },
-    {
-        name:'TypeScript',
-        image:tsLogo
-    },
-    {
-        name:'React',
-        image:reactLogo
-    },
-    {
-        name:'Angular',
-        image:angularLogo
-    },
-    {
-        name:'Next.js',
-        image:nextjsLogo
-    },
-    {
-        name:'Redux',
-        image:reduxLogo
-    },
-    {
-        name:'Sass',
-        image:sassLogo
-    },
-    {
-        name:'Tailwind',
-        image:tailwindLogo
-    },
-    {
-        name:'Firebase',
-        image:firebaseLogo
-    },
-    {
-        name:'Node.js',
-        image:nodeLogo
-    },
-
+  {
+    name: 'JScript',
+    image: jsLogo
+  },
+  {
+    name: 'TScript',
+    image: tsLogo
+  },
+  {
+    name: 'React',
+    image: reactLogo
+  },
+  {
+    name: 'Angular',
+    image: angularLogo
+  },
+  {
+    name: 'Next.js',
+    image: nextjsLogo
+  },
+  {
+    name: 'Redux',
+    image: reduxLogo
+  },
+  {
+    name: 'Sass',
+    image: sassLogo
+  },
+  {
+    name: 'Tailwind',
+    image: tailwindLogo
+  },
+  {
+    name: 'Firebase',
+    image: firebaseLogo
+  },
+  {
+    name: 'Node.js',
+    image: nodeLogo
+  }
 ]
