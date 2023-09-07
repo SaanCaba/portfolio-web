@@ -16,9 +16,10 @@ function App() {
   const { scrollYProgress } = useScroll()
   return (
     <main>
+      <SideBar />
+
       <Layout>
         <ButtonLanguage flagActive={flagActive} setFlagActive={setFlagActive} />
-        <SideBar />
         <motion.div
           className={styles.progressBar}
           style={{ scaleX: scrollYProgress }}

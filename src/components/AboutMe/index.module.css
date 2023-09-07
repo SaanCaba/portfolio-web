@@ -17,7 +17,7 @@
   font-size: 20px;
   letter-spacing: 1px;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 5px;
 }
 .pAboutMe:last-child {
@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
 }
 
 .technologies {
@@ -71,7 +72,8 @@
   .technologies {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 10px;
     background-color: rgba(255, 255, 255, 0.865);
     width: min-content;
