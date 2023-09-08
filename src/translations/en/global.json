@@ -53,13 +53,17 @@
             "name": "Weather App",
             "desc": "Weather app, you can put a name of your city, and i give you how is the weather in that city."
         },
-        "goals": {
-            "name": "Goals 2023 App",
-            "desc": "In this application we can put all of our goals for this year and when we complete the objetive we can cross it off "
-        },
         "game": {
             "name": "Rock-Papper-Scissors App",
             "desc": "It's a rock-paper-scissors game, where i developed a CPU to play with someone."
+        },
+        "mlibre": {
+            "name": "MercadoLibre Frontend test",
+            "desc": "It's a Mercado Libre Frontend Test, with a search bar, list of products and detail page. I was try to copy the Mercado Libre Page."
+        },
+        "urlShort": {
+            "name": "Url Shortenting App",
+            "desc": "Url Shortening App, in this web you can put a url and i give you the url shortened, if you put the shortened url, you can go to your page correctly."
         }
     }
 }

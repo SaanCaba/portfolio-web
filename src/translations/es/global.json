@@ -53,13 +53,17 @@
             "name": "Clima App",
             "desc": "Aplicación de clima, que según el lugar seleccionado te sale como está el clima en ese sitio."
         },
-        "goals": {
-            "name": "Objetivos 2023 App",
-            "desc": "Aplicación donde podemos colocar todos nuestros objetivos para este año, e ir tachandolos."
-        },
         "game": {
             "name": "Piedra-Papel-Tijera App",
             "desc": "Juego de piedra, papel o tijeras, donde se desarrollo un usuario CPU con el quien jugar."
+        },
+        "mlibre": {
+            "name": "MercadoLibre Frontend test",
+            "desc": "Es un Frontend test de Mercado Libre hecho con Next.js, utilizando la api de MELI, apoyado en un vídeo de Goncy Pozzo."
+        },
+        "urlShort": {
+            "name": "Url Shortenting App",
+            "desc": "Url Shortening App, en esta web vas a poder poner tu url, y te daremos esa misma url pero recortada, para que sea más cómoda de usar, Es un challenge de Frontend Mentor."
         }
     }
 }

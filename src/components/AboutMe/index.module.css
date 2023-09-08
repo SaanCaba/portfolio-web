@@ -49,9 +49,7 @@
   width: 100%;
   flex-wrap: wrap;
   gap: 10px;
-  background-color: rgba(255, 255, 255, 0.865);
   border-radius: 5px;
-  border: 1px solid var(--primary);
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -74,12 +72,6 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 10px;
-    background-color: rgba(255, 255, 255, 0.865);
     width: min-content;
-    border-radius: 5px;
-    border: 1px solid var(--primary);
-    padding-top: 8px;
-    padding-bottom: 8px;
   }
 }
