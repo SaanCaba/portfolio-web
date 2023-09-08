@@ -3,6 +3,7 @@ import styles from './index.module.css'
 import { BiCodeAlt } from 'react-icons/bi'
 import { HiOutlineDocumentDownload } from 'react-icons/hi'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import { motion } from 'framer-motion'
 
 interface Props {
   flagActive: string
@@ -31,7 +32,17 @@ function Title({ flagActive }: Props) {
         <h1 className={styles.titleText}>Santiago Caballero</h1>
         <div className={styles.contPIcon}>
           <p className={styles.titleP}>Frontend Developer</p>
-          <BiCodeAlt size={30} className={styles.icon} />
+          <motion.div
+            initial={{ transform: 'rotate(15deg)' }}
+            animate={{ transform: 'rotate(-15deg)' }}
+            transition={{
+              repeat: Infinity,
+              duration: 1,
+              repeatType: 'reverse'
+            }}
+          >
+            <BiCodeAlt size={30} className={styles.icon} />
+          </motion.div>
         </div>
       </div>
       <div className={styles.contIcons}>
