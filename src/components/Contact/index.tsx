@@ -7,6 +7,7 @@ import Anim from '../../lottie/contact.json'
 import { handleErrorForm } from '../../utils/handleContactForm'
 import { useTranslation } from 'react-i18next'
 import { IoIosMail } from 'react-icons/io'
+import FadeInWhenVisibleWrapper from '../WrapperFramerMotion/FadeInWhenVisibleWrapper'
 
 const Loader = () => {
   return (
@@ -19,23 +20,25 @@ const Loader = () => {
 function Contact() {
   const [t] = useTranslation('global')
   return (
-    <div id='contact' className={styles.contContact}>
-      <div className={styles.contAnimLottie}>
-        <Lottie className={styles.lottie} animationData={Anim} />
-      </div>
-      <div className={styles.contactMeInfo}>
-        <p>{t('contact.message-1')}</p>
-        <p>{t('contact.message-2')}</p>
-        <div className={styles.mailCont}>
-          <IoIosMail size={40} />
-          <p className={styles.mail}>
-            <a href='mailto:saantyc12.caballero@gmail.com'>
-              saantyc12.caballero@gmail.com
-            </a>{' '}
-          </p>
+    <FadeInWhenVisibleWrapper fromAction='fromLeft'>
+      <div id='contact' className={styles.contContact}>
+        <div className={styles.contAnimLottie}>
+          <Lottie className={styles.lottie} animationData={Anim} />
+        </div>
+        <div className={styles.contactMeInfo}>
+          <p>{t('contact.message-1')}</p>
+          <p>{t('contact.message-2')}</p>
+          <div className={styles.mailCont}>
+            <IoIosMail size={40} />
+            <p className={styles.mail}>
+              <a href='mailto:saantyc12.caballero@gmail.com'>
+                saantyc12.caballero@gmail.com
+              </a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </FadeInWhenVisibleWrapper>
   )
 }
 
