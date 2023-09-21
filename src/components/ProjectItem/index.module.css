@@ -28,19 +28,6 @@
   letter-spacing: 1px;
 }
 
-.contTecnologia img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  background-color: rgba(255, 255, 255, 0.411);
-  border-radius: 50%;
-  padding: 12px;
-  margin-right: 10px;
-  box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
-}
-
 .contItemP:hover .contHover {
   top: 0;
   left: 0;
@@ -96,12 +83,14 @@
   cursor: pointer;
   width: 100px;
   height: 60px;
+  border-radius: 8px;
+
   background-color: rgba(255, 255, 255, 0.595);
   padding: 12px;
   object-fit: contain;
-  box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+  box-shadow: 1px 1px 30px 10px rgba(244, 115, 115, 0.75);
+  -webkit-box-shadow: 1px 1px 30px 10px rgba(244, 115, 115, 0.75);
+  -moz-box-shadow: 1px 1px 30px 10px rgba(244, 115, 115, 0.75);
 }
 
 .contImgDesc:hover .contDesc {
@@ -114,10 +103,11 @@
   background-color: rgba(255, 255, 255, 0.595);
   padding: 12px;
   margin-right: 10px;
+  border-radius: 8px;
   object-fit: contain;
-  box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 1px 1px 30px 10px rgba(255, 255, 255, 0.75);
+  box-shadow: 1px 1px 30px 10px rgba(244, 115, 115, 0.75);
+  -webkit-box-shadow: 1px 1px 30px 10px rgba(244, 115, 115, 0.75);
+  -moz-box-shadow: 1px 1px 30px 10px rgba(244, 115, 115, 0.75);
 }
 
 .link {
@@ -130,7 +120,7 @@
 
 @media only screen and (min-width: 992px) {
   .contDesc p {
-    width: 100%;
+    width: 400px;
     margin-top: 15px;
     font-size: medium;
     padding: 10px;
