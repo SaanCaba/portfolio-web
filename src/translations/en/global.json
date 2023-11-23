@@ -64,6 +64,10 @@
         "urlShort": {
             "name": "Url Shortenting App",
             "desc": "Url Shortening App, in this web you can put a url and i give you the url shortened, if you put the shortened url, you can go to your page correctly."
+        },
+        "pokedex": {
+            "name": "Pokedex app",
+            "desc": "Pokedex app, you can see all the pokemons, add your favorite pokemons, and you can see in the top of the page, 'The pokemon of the month'."
         }
     }
 }

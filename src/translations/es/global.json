@@ -64,6 +64,10 @@
         "urlShort": {
             "name": "Url Shortenting App",
             "desc": "Url Shortening App, en esta web vas a poder poner tu url, y te daremos esa misma url pero recortada, para que sea más cómoda de usar, Es un challenge de Frontend Mentor."
+        },
+        "pokedex": {
+            "name": "Pokedex app",
+            "desc": "Pokedex app, en esta web, vas a poder ver todos los pokemones de la pokedex, vas a poder agregarlos a favoritos, y además podes visualizar un pokemon de mes."
         }
     }
 }
