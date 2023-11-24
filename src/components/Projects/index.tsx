@@ -1,21 +1,21 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css/effect-coverflow'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
+import React, { useContext, useEffect, useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper'
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
-import './projects.css'
-import { dataProjects } from '../../data/data'
-import ProjectItem from '../ProjectItem'
-import { useTranslation } from 'react-i18next'
-import FadeInWhenVisibleWrapper from '../WrapperFramerMotion/FadeInWhenVisibleWrapper'
+import './projects.css';
+import { dataProjects } from '../../data/data';
+import ProjectItem from '../ProjectItem';
+import { useTranslation } from 'react-i18next';
+import FadeInWhenVisibleWrapper from '../WrapperFramerMotion/FadeInWhenVisibleWrapper';
 
 function Projects() {
-  const [t] = useTranslation('global')
-
+  const [t] = useTranslation('global');
+  console.log(dataProjects);
   return (
     <FadeInWhenVisibleWrapper fromAction='fromRight'>
       <div id='projects' className='contProjects'>
@@ -46,13 +46,13 @@ function Projects() {
                 <SwiperSlide className='swiper-slide' key={i}>
                   <ProjectItem project={el} />
                 </SwiperSlide>
-              )
+              );
             })}
           </Swiper>
         </section>
       </div>
     </FadeInWhenVisibleWrapper>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
