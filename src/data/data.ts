@@ -1,4 +1,4 @@
-import pokemonImg from '../assets/pokemonP.jpg';
+import l3ComexImg from '../assets/l3comex.png';
 import angularImg from '../assets/angularProject.png';
 import despegueImg from '../assets/despegue.jpg';
 import ecommerceImg from '../assets/ecommerce.jpg';
@@ -27,6 +27,14 @@ export type DetailsProjects = {
 };
 
 export const dataProjects: Array<DetailsProjects> = [
+  {
+    img: l3ComexImg,
+    name: 'projects-names.l3comex.name',
+    repo: '',
+    deploy: 'l3comex.com',
+    tecnologias: [nextjsLogo, tsLogo, firebaseLogo],
+    description: 'projects-names.l3comex.name'
+  },
   {
     img: mlibreTestImg,
     name: 'projects-names.mlibre.name',

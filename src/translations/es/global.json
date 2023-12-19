@@ -68,6 +68,10 @@
         "pokedex": {
             "name": "Pokedex app",
             "desc": "Pokedex app, en esta web, vas a poder ver todos los pokemones de la pokedex, vas a poder agregarlos a favoritos, y además podes visualizar un pokemon de mes."
+        },
+        "l3comex": {
+            "name": "L3COMEX Website",
+            "desc": "Sitio web desarrollado para estudio jurídico, el mismo cuenta con un sistema para poder subir publicaciones además de un sistema de login."
         }
     }
 }

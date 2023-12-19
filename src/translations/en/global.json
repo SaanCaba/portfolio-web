@@ -68,6 +68,10 @@
         "pokedex": {
             "name": "Pokedex app",
             "desc": "Pokedex app, you can see all the pokemons, add your favorite pokemons, and you can see in the top of the page, 'The pokemon of the month'."
+        },
+        "l3comex": {
+            "name": "L3COMEX Website",
+            "desc": "Website developed for a law firm, it has a system to upload publications as well as a login system."
         }
     }
 }
