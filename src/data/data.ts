@@ -33,7 +33,7 @@ export const dataProjects: Array<DetailsProjects> = [
     repo: '',
     deploy: 'l3comex.com',
     tecnologias: [nextjsLogo, tsLogo, firebaseLogo],
-    description: 'projects-names.l3comex.name'
+    description: 'projects-names.l3comex.desc'
   },
   {
     img: mlibreTestImg,
